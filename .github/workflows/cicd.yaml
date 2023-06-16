@@ -1,7 +1,7 @@
 name: KBOT-CICD
 env: 
   CONTAINER_REGISTRY: gcr.io
-  CONTAINER_REGISTRY_USER: 
+
 
 on: push 
 
