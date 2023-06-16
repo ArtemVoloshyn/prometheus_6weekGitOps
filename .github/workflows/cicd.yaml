@@ -2,6 +2,7 @@
 name: KBOT-CICD
 env:
   CONTAINER_REGISTRY: gcr.io
+  PROJECT_ID: My Project 1712
 on: push
 jobs:
   ci:
@@ -13,11 +14,11 @@ jobs:
       - name: Run test
         run: make test
       - name: Google registry login
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: ${{ env.CONTAINER_REGISTRY }}
-          username: oauth2accesstoken
-          password: ${{ steps.auth.outputs.access_token }}
+          username: _json_key
+          password: ${{ secrets.GCR_JSON_KEY }}
       - name: build app
         run: make build
       - name: create docker image
