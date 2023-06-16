@@ -19,6 +19,8 @@ jobs:
           registry: ${{ env.CONTAINER_REGISTRY }}
           username: _json_key
           password: ${{ secrets.GCR_JSON_KEY }}
+
+      
       - name: build app
         run: make build
       - name: create docker image
