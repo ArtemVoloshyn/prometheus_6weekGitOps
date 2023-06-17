@@ -36,7 +36,7 @@ get:
 # added variables like GOOS and GOARCH.
 
 build: format get
-	CGO_ENABLED=0 GOOS=$(TARGETOS) GOARCH=$(TARGETARCH) go build -v -o kbot -ldflags "-X="voloshynartem/prometheus_6weekGitOps/cmd.appVersion=${VERSION}
+	CGO_ENABLED=0 GOOS=$(TARGETOS) GOARCH=$(TARGETARCH) go build -v -o kbot -ldflags "-X="voloshynartem/prometheus_6weekgitops/cmd.appVersion=${VERSION}
 
 #command for automation deleting  files that already don't needed. Like binary file of code after building doesn't need in commits history.
 
