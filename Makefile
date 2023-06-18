@@ -47,7 +47,7 @@ image:
 docker_login:
 	docker login -u ${REGISTRY}
 
-push: docker_login
+push: 
 	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}-${TARGETOS} 
 
 
