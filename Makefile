@@ -11,7 +11,8 @@ VERSION=$(shell echo -n $(shell git describe --tags --abbrev=0)-$(shell git rev-
 
 #TARGETOS=linux
 #linux darwin windows
-#TARGETARCH=amd64 	
+TARGETARCH=amd64
+TARGETOS=linux
 
 # TARGETOS
 # first word is the option of make command, and called like target parameter of makefile  
@@ -46,7 +47,7 @@ image:
 docker_login:
 	docker login -u ${REGISTRY}
 
-push_docker_hub: docker_login
+push: docker_login
 	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}-${TARGETOS} 
 
 
