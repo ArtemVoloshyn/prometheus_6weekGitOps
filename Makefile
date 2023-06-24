@@ -11,8 +11,9 @@ VERSION=$(shell echo -n $(shell git describe --tags --abbrev=0)-$(shell git rev-
 
 #TARGETOS=linux
 #linux darwin windows
-TARGETARCH=amd64
 TARGETOS=linux
+TARGETARCH=amd64
+
 
 # TARGETOS
 # first word is the option of make command, and called like target parameter of makefile  
