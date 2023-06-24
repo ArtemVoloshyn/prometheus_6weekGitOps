@@ -48,7 +48,7 @@ docker_login:
 	docker login -u ${REGISTRY}
 
 push: 
-	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}-${TARGETOS} 
+	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}-${TARGETARCH}- 
 
 
 ################################1task - building GO execution program file #####
