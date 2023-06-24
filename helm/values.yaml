@@ -5,7 +5,7 @@
 replicaCount: 1
 image:
   repository: voloshynartem
-  tag: "v1.0.6-4cdc8be"
+  tag: "v1.0.6-ad117ae"
   arch: amd64
 secret:
   name: kbot
