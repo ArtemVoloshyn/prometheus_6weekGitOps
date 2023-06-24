@@ -8,6 +8,8 @@ image:
   tag: "v1.0.6-914f8f5"
   arch: amd64
   os: linux
+  arch: amd64
+  
 secret:
   name: kbot
   tokenKey: token
