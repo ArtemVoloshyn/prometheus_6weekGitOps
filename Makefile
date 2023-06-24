@@ -4,7 +4,7 @@
 
 
 APP := $(shell basename $(shell git remote get-url origin))
-REGISTRY := ghcr.io/artemvoloshyn/
+REGISTRY := ghcr.io/artemvoloshyn/${APP}
 
 VERSION=$(shell echo -n $(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD))
 #$(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD) 
