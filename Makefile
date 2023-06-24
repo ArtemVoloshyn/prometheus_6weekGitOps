@@ -43,7 +43,7 @@ build: format get
 #command for automation deleting  files that already don't needed. Like binary file of code after building doesn't need in commits history.
 
 image:
-	docker build . -t ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}-${TARGETOS} --build-arg TARGETARCH=${TARGETARCH} --build-arg TARGETOS=${TARGETOS} 
+	docker build . -t ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}-${TARGETARCH} --build-arg TARGETARCH=${TARGETARCH} --build-arg TARGETOS=${TARGETOS} 
 
 docker_login:
 	docker login -u ${REGISTRY}
