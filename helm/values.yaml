@@ -5,7 +5,7 @@
 replicaCount: 1
 image:
   repository: voloshynartem
-  tag: "v1.0.6-050f13f"
+  tag: "v1.0.6-d53368a"
   os: linux
   arch: amd64
 secret:
