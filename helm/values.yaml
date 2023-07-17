@@ -5,7 +5,7 @@
 replicaCount: 1
 image:
   repository: artemvoloshyn
-  tag: "v1.0.6-aa15ff7"
+  tag: "v1.0.6-43576cc"
   os: linux
   arch: amd64
 secret:
