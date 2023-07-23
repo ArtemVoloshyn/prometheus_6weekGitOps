@@ -13,7 +13,7 @@ RUN make build TARGETARCH=$TARGETARCH TARGETOS=$TARGETOS
 FROM scratch
 WORKDIR /
 #copy artefact from building place, where GO installed
-COPY --from=builder /go/src/app/Prometheus_2week_2module_5task .
+COPY --from=builder /go/src/app/kbot .
 COPY --from=alpine:latest /etc/ssl/certs/ca-certificates.crt/ /etc/ssl/certs
 ENTRYPOINT ["./prometheus_6weekgitops,"start"]
 
