@@ -5,6 +5,8 @@
 replicaCount: 1
 image:
   repository: ghcr.io/artemvoloshyn
+  app:
+    name: prometheus_6weekgitops
   tag: "v1.0.6-e92fb8f"
   os: linux
   arch: amd64
