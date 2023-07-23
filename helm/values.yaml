@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image:
-  repository: artemvoloshyn
+  repository: ghcr.io/artemvoloshyn
   tag: "v1.0.6-43576cc"
   os: linux
   arch: amd64
