@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/artemvoloshyn
   app:
     name: prometheus_6weekgitops
-  tag: "v1.0.6-ba6991d"
+  tag: "v1.0.6-cb0a2a0"
   os: linux
   arch: amd64
 secret:
